@@ -20,7 +20,7 @@ module.exports = {
             .addField("Tagdaki üye sayısı", message.guild.members.cache.filter(m => m.user.username.includes(tag)).size)
             .addField("Nick Tagdaki üye sayısı", message.guild.members.cache.filter(m => m.user.username.includes(tag2)).size) 
             .addField("Etiket Tagdaki üye sayısı", message.guild.members.cache.filter(m => m.user.tag.includes(etikettag)).size) 
-            .setFooter(`${message.author.tag} tarafından istendi`, message.author.avatarURL({dynamic:true}))
+            .setFooter(`Creza was here 💖`)
         message.channel.send({embeds: [xra]});
     }
 }
