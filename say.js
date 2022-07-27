@@ -11,7 +11,7 @@ module.exports = {
         for (const [id, voiceChannel] of voiceChannels) count += voiceChannel.members.size;
         let  çevrimiçi = message.guild.members.cache.filter(m => !m.user.bot && m.user.presence.status !== "offline").size
         
-        const xra = new MessageEmbed()
+        const creza = new MessageEmbed()
             .setColor("0x800d0d") 
             .setThumbnail(message.guild.iconURL({ dynamic: true }))
             .addField("Sunucudaki üye sayısı", message.guild.memberCount)
@@ -21,6 +21,6 @@ module.exports = {
             .addField("Nick Tagdaki üye sayısı", message.guild.members.cache.filter(m => m.user.username.includes(tag2)).size) 
             .addField("Etiket Tagdaki üye sayısı", message.guild.members.cache.filter(m => m.user.tag.includes(etikettag)).size) 
             .setFooter(`Creza was here 💖`)
-        message.channel.send({embeds: [xra]});
+        message.channel.send({embeds: [creza]});
     }
 }
